@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+html,
+body{
+    height: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.carousel,
+.item,
+.active{
+    height: 100%;
+}
+
+.carousel-inner{
+    height: 100%;
+    background: black;
+}
+
+.carousel-caption{
+    padding-bottom: 230px;
+}
+
+span{
+    color: #f907fc;
+}
+
+h2{
+    font-size: 60px;
+  color: white;
+}
+
+p{
+    padding-bottom: 10px;
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+
+
+.fill{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.6;
+}
+
+.btn-transparent{
+    background: transparent;
+    color: white;
+    border: 2px solid #f907fc;
+}
+
+.btn-transparent:hover{
+    background-color: #f907fc;
+}
+
+.btn-rounded{
+    border-radius: 10px;
+}
+
+.btn-large{
+    padding: 11px 45px;
+}
+
+@keyframes fadeInRight{
+    from{
+        opacity: 0;
+        transform: translate3d(100px, 0,0);
+    }
+    to{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInRight{
+    animation-name: fadeInRight;
+}
+
+.carousel-inner .item .fill>img{
+    animation: zoom 15s;
+    width: 100%;
+}
+
+@keyframes zoom{
+    from{
+        transform: scale(1, 1);
+    }
+    to{
+        transform: scale(1.5, 1.5);
+    }
+}
